@@ -1,0 +1,55 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    min-height: 50vh;
+}
+
+#songList {
+    background: linear-gradient(to bottom right, lightBlue, aliceBlue);
+    border-radius: 10px;
+    text-align: left;
+}
+
+li {
+    padding: 10px;
+}
+
+li:hover, i:hover {
+    cursor: pointer;
+}
+
+ol {
+    margin-top: 0;
+}
+
+#controls {
+    background: lightSkyBlue;
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+#controls p {
+    margin-bottom: 8px;
+}
+
+h4 {
+    background: lightBlue;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 8px;
+}
+
+a {
+    color: deepSkyBlue;
+    font-weight: bold;
+    font-size: 85%;
+}
+
+a:hover {
+    text-decoration: none;
+}
