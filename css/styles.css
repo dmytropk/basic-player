@@ -53,3 +53,7 @@ a {
 a:hover {
     text-decoration: none;
 }
+
+#currentSong {
+    font-weight: bold;
+}

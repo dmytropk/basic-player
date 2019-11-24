@@ -23,11 +23,13 @@ document.getElementById('songList').appendChild(createSongList());
 
 // playing songs when clicked
 songList.onclick = (e) => {
-    // console.log(e);
     const clickedItem = e.target;
     const source = document.getElementById('source');
     source.src = 'songs/' + clickedItem.innerText;
-    console.log(clickedItem.innerText);
+    
+    // show currently playing song
+    document.getElementById('currentlyPlaying').innerText = "Now Playing: ";
+    document.getElementById('currentSong').innerText = clickedItem.innerText;
 
     player.load();
     player.play();
