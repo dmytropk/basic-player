@@ -45,3 +45,10 @@ const playAudio = () => {
 const pauseAudio = () => {
     player.pause();
 }
+
+// volume slider
+const slider = document.getElementById('volumeSlider');
+slider.oninput = (e) => {
+    const volume = e.target.value;
+    player.volume = volume;
+}
