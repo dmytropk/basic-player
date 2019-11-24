@@ -34,3 +34,14 @@ songList.onclick = (e) => {
     player.load();
     player.play();
 }
+
+// play and pause the audio
+const playAudio = () => {
+    if(player.readyState) {
+        player.play();
+    }
+}
+
+const pauseAudio = () => {
+    player.pause();
+}
