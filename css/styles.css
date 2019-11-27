@@ -57,3 +57,8 @@ a:hover {
 #currentSong {
     font-weight: bold;
 }
+
+progress {
+    width: 80%;
+    margin: 10px;
+}

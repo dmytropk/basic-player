@@ -11,12 +11,14 @@
 </head>
 
 <body>
-    <audio id="player">
+    <audio id="player" ontimeupdate="updateProgress()">
         <source src="songs/" id="source"> <!-- source is set up using JS -->
             Audio not supported
     </audio>
 
     <span id="currentlyPlaying"></span><span id="currentSong"></span>
+
+    <progress id="progress" value="0" max="100"></progress>
 
     <div id="controls">
         <i class="far fa-play-circle fa-3x" onclick="playAudio()"></i>

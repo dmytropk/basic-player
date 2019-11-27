@@ -52,3 +52,18 @@ slider.oninput = (e) => {
     const volume = e.target.value;
     player.volume = volume;
 }
+
+// progress bar
+const updateProgress = () => {
+    // const progressBar = document.getElementById('progress');
+    // debugging (Failed to set the 'value' property on 'HTMLProgressElement')
+    // console.log(progressBar.value + "progress bar value");
+    // console.log(player.currentTime + "current time");
+    // console.log(player.duration + "duration");
+
+    // progressBar.value = (player.currentTime / player.duration) * 100;
+    if(player.currentTime > 0) {
+        const progressBar = document.getElementById('progress');
+        progressBar.value = (player.currentTime / player.duration) * 100;
+    }
+}
