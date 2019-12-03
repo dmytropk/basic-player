@@ -36,12 +36,21 @@ ol {
     margin-bottom: 8px;
 }
 
-h4 {
+#infoBar {
     background: lightBlue;
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 8px;
+}
+
+#infoBar p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#progress {
+    margin-top: 5px;
 }
 
 a {
