@@ -1,11 +1,12 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.2em;
-    width: 50%;
+    width: 35%;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
     min-height: 50vh;
+    color: rgb(49, 49, 49);
 }
 
 #songList {
@@ -70,4 +71,23 @@ a:hover {
 progress {
     width: 80%;
     margin: 10px;
+}
+
+@media all and (min-width: 800px) and (max-width: 1000px) {
+    body {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 800px) {
+    body {
+        width: 65%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    body {
+        width: 80%;
+        font-size: 0.8em;
+    }
 }
